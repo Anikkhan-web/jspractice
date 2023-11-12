@@ -7,16 +7,11 @@
   </head>
   <body>
     <script>
-      var person = {
-        name: "Anik",
-        age: "30",
-        city: "Rangpur",
-        hight: "6 feet",
-      };
-
-      for (var item in person) {
-        document.write(person[item] + "<br>");
-      }
+      var num = [1, 2, 3, 4, 5, 6, 2, 2, 33, 44, 55, 66, 77];
+      var result = num.filter((item) => {
+        return item > 50;
+      });
+      document.write(result);
     </script>
   </body>
 </html>
